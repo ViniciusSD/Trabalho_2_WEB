@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Dashboard do Professor</title>
+  <meta charset="UTF-8">
+</head>
+<body>
+  <h1>Bem-vindo, Professor!</h1>
+  <h2>Lista de Alunos</h2>
+
+  {{#alunos.length}}
+    <ul>
+      {{#alunos}}
+        <li><strong>{{nome}}</strong> - {{curso}} - {{idade}} anos</li>
+      {{/alunos}}
+    </ul>
+  {{/alunos.length}}
+
+  {{^alunos.length}}
+    <p>Nenhum aluno cadastrado.</p>
+  {{/alunos.length}}
+</body>
+</html>

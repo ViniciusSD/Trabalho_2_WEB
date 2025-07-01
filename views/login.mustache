@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head><title>Login</title></head>
+<body>
+  <h2>Login do Professor</h2>
+  <form action="/login" method="POST">
+    <input name="username" placeholder="Usuário" required>
+    <input name="password" type="password" placeholder="Senha" required>
+    <button type="submit">Entrar</button>
+  </form>
+  {{#error}}<p>{{error}}</p>{{/error}}
+</body>
+</html>

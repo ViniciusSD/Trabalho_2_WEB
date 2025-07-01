@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head><title>Bem-vindo</title></head>
+<body>
+  <h2>Acesso do Professor</h2>
+  <form action="/register" method="POST">
+    <input name="username" placeholder="Usuário" required>
+    <input name="password" type="password" placeholder="Senha" required>
+    <button type="submit">Cadastrar</button>
+  </form>
+  <a href="/login">Já tem conta? Faça login</a>
+  {{#error}}<p>{{error}}</p>{{/error}}
+</body>
+</html>
