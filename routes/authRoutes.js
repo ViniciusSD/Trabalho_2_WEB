@@ -9,3 +9,5 @@ router.post('/login', controller.login);
 router.get('/dashboard', controller.dashboard);
 
 module.exports = router;
+
+//testar
